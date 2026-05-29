@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, SafeAreaView, Pressable } from 'react-native';
-
-export default function App() {
-=======
 import { useState } from 'react';
 import {
   StyleSheet,
@@ -19,7 +13,6 @@ export default function App() {
   const [modalVisible, setModalVisible] = useState(false);
   const [nombrePaciente, setNombrePaciente] = useState('');
 
->>>>>>> Stashed changes
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.titulo}>
@@ -27,10 +20,6 @@ export default function App() {
         <Text style={styles.tituloBold}>Veterinaria</Text>
       </Text>
 
-<<<<<<< Updated upstream
-      <Pressable style={styles.btnNuevaCita}>
-        <Text style={styles.btnTextoNuevaCita}>Nueva Cita</Text>
-=======
       <Modal visible={modalVisible} animationType='slide'>
         <View style={styles.campo}>
           <Text style={styles.label}>Nombre Paciente</Text>
@@ -64,7 +53,6 @@ export default function App() {
         <Text style={styles.btnTextoNuevaCita}>
           Nueva Cita
         </Text>
->>>>>>> Stashed changes
       </Pressable>
     </SafeAreaView>
   );
@@ -98,21 +86,6 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 18,
     fontWeight: '900',
-<<<<<<< Updated upstream
-    textTransform: 'uppercase'
-  },
-  noPacientes: {
-    marginTop: 40,
-    textAlign: 'center',
-    fontSize: 24,
-    fontWeight: '600'
-  },
-  listado: {
-    marginTop: 50,
-    marginHorizontal: 30
-  }
-=======
     textTransform: 'uppercase',
   },
->>>>>>> Stashed changes
 });
